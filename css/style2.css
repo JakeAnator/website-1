@@ -1,11 +1,10 @@
-
 h1 {
-	color: #ffffff;
-	}
+    color: #ffffff;
+}
 p {
-	color: #ffffff;
-	}
- a {
+    color: #ffffff;
+}
+a {
     color: #ffff00;
     text-decoration: none;
     font-weight: bold;
@@ -14,34 +13,36 @@ a:hover {
     text-decoration: underline;
     color: #FF4500; /* Orange-Red when hovered */
 }
+
 .wrap {
-    width:75%;
-    margin:0 auto;
+    width: 75%;
+    margin: 0 auto;
 }
+
 .top {
-	height:30%;
-	margin-top:20px;
-	margin-bottom:15px;
-	background-color: #73458e;
-	text-align:center;
-	line-height:250%;
-	 overflow: hidden;
+    height: 30%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    background-color: #73458e;
+    text-align: center;
+    line-height: 250%;
+    overflow: hidden;
 }
 
 .header {
-	height:140px;
-	margin-bottom:15px;
-	background-color: #73458e;
-	text-align:center;
-	line-height:140px;
+    height: 140px;
+    margin-bottom: 15px;
+    background-color: #73458e;
+    text-align: center;
+    line-height: 140px;
 }
 
 .intro {
-	height: 120px;
-	margin-bottom:15px;
-	background-color:#73458e;
-	text-align:center;
-	line-height:120px;
+    height: 120px;
+    margin-bottom: 15px;
+    background-color: #73458e;
+    text-align: center;
+    line-height: 120px;
 }
 
 .box {
@@ -57,6 +58,7 @@ a:hover {
     display: flex;
     gap: 10px;
 }
+
 .clear {
     clear: both;
 }
@@ -67,12 +69,37 @@ a:hover {
     color: white;
     padding: 20px;
     margin-top: 20px;
-   
     overflow: hidden; /* Prevent any overflow */
 }
 
 img {
-    width: 90%; /* or any custom size */
-    height: 90%; 
+    width: 90%;
+    height: 90%;
     object-fit: contain;
+}
+
+/* Media Query for Small Screens (Mobile) */
+@media screen and (max-width: 768px) {
+    .wrap {
+        width: 100%;
+    }
+
+    .box-container {
+        flex-direction: column; /* Stack boxes vertically on mobile */
+        gap: 20px; /* Increase gap between stacked boxes */
+    }
+
+    .top, .intro, .footer {
+        padding: 10px; /* Add some padding on mobile */
+    }
+
+    .box {
+        width: 100%; /* Boxes will take full width on mobile */
+        padding: 15px; /* Reduce padding on small screens */
+    }
+
+    img {
+        width: 100%; /* Ensure images fit inside the box */
+        height: auto; /* Maintain aspect ratio of images */
+    }
 }
